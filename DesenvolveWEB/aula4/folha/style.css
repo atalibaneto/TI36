@@ -18,6 +18,9 @@ h1 {
     color: #ffa600;
     padding: 10px;
 }
+h2 {
+    padding-bottom: 15px;
+}
 nav ul {
     list-style: none;
     padding: 14px 20px;
@@ -67,28 +70,24 @@ footer {
     font-weight: bold;
 }
 form {
-    background-color: #ddd;
     padding: 15px;
     border: 1px solid #0e6856;
 }
-
 label {
     color: #0e6856;
     font-weight: bold;
 }
-
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
     margin-bottom: 10px;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
 }
-
 input[type="submit"] {
     background-color: coral;
-    color: white;
+    color: #FFF;
     border: none;
     padding: 8px 16px;
     cursor: pointer;
