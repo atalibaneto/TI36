@@ -178,7 +178,6 @@
         </div>
         <div class="copyright"><!-- Símbolo copyright Alt + 0169 -->
             <p>Copyright © 2025. Orgulhosamente feito com <i class="fa-solid fa-heart"></i> na Terra do Saci.</p>
-            <a href="#header"><img src="topo.png"></a>
         </div>
     </div>
 
@@ -217,15 +216,15 @@
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
                     msg.innerHTML = "Mensagem enviada com sucesso!"
-                    setTimeout(function() {
+                    setTimeout(function () {
                         msg.innerHTML = ""
-                    },5000)
+                    }, 5000)
                     form.reset()
                 })
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
-    <script>
+    <!-- <script>
         var typed = new Typed('.habilidades', {
             strings: ['Desenvolvimento de Interface WEB/APP', 'Web Development', 'Desenvolvimento de Apps para Android e iOS'],
             typeSpeed: 60,
@@ -233,7 +232,36 @@
             backDelay: 500,
             loop: true,
         })
+    </script> -->
+
+
+    <script>
+        var typed = new Typed('.habilidades', {
+            strings: ['Desenvolvimento de Interface WEB/APP', 'Web Development', 'Desenvolvimento de Apps para Android e iOS'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 500,
+            loop: true,
+
+        });
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
