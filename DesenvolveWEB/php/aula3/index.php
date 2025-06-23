@@ -61,10 +61,11 @@
         while ($i <= 10)
         {
             //echo " $i | ";
-            echo $i.($i != 10 ? " | " : "");
+            echo $i.($i != 10 ? " | " : ""); //Operador ternário
             $i++;
         }
         echo "<br>";
+        // Exemplo com Break
         $i = 1;
         while ($i <= 654687469543213241)
         {
@@ -74,12 +75,33 @@
         }
         echo $traco;
         echo "<h2>Exemplo com do..while</h2>";
-        echo "<p>O do..while é um loop de repetição que executa um bloco de código pelo menos uma vez e depois repete enquanto uma condição for verdadeira.</p><br><p>Diferente do while (que verifica a condição antes de executar), o do..while executa primeiro e depois verifica.</p>";
+        echo "<p>O do..while é um loop de repetição que executa um bloco de código pelo menos uma vez e depois repete enquanto uma condição for verdadeira.</p><p>Diferente do while (que verifica a condição antes de executar), o do..while executa primeiro e depois verifica.</p>";
         $i = 1;
         do {
             echo " $i | ";
             $i++;
         } while ($i <= 10);
+        // Exemplo com Break
+        echo "<br>";
+        $i = 1;
+        do {
+            if ($i == 3) break;
+            echo " $i | ";
+            $i++;
+        } while ($i <= 6);
+        echo "<h2>Exemplo prático</h2>";
+        $i = 1;
+        while ($i == 0) { // Condição falsa desde o começo
+            echo $i . " | ";
+            $i++;
+        }
+        $i = 1;
+        do {
+            echo $i . " | ";
+            $i++;
+        } while ($i == 0); // Condição falsa, mas executou o código uma vez
+        echo $traco;
+
     ?>
 </body>
 </html>
