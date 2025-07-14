@@ -9,10 +9,10 @@
 <body>
 <a href="javascript: history.go(-1)">Voltar</a> | <a href="index.php">Home</a><br>
 <?php 
-    var_dump($_POST);
+    var_dump($_GET);
 
 
-    echo "<p>Seja bem-vindo! <strong>".$_POST["nome"]."</strong><br>O e-mail digitado foi: ".$_POST["email"]."</p>";
+    echo "<p>Seja bem-vindo! <strong>".$_GET["nome"]."</strong><br>O e-mail digitado foi: ".$_GET["email"]."</p>";
 
    
 

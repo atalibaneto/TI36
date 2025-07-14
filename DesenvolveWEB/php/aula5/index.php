@@ -19,6 +19,7 @@
     <?php
         $carros = array("Fusca", "Brasília", "Kombi", "Uno com escada", "Fiat 147");
         var_dump($carros);
+        echo "<br>";
         foreach ($carros as $x) {
             echo "$x <br>";
             //echo "<br>".var_dump($x);
